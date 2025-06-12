@@ -33,11 +33,15 @@ def subtract():
 
 
 def coffee_face_update():
+    if track == 0:
+        canvas.itemconfig(coffee, image=coffee_1_image)
     if track == 1:
         canvas.itemconfig(coffee, image=coffee_2_image)
     elif track == 2:
         canvas.itemconfig(coffee, image=coffee_3_image)
     elif track == 3:
+        canvas.itemconfig(coffee, image=coffee_4_image)
+    elif track == 4:
         canvas.itemconfig(coffee, image=coffee_4_image)
     elif track == 5:
         canvas.itemconfig(coffee, image=coffee_5_image)
